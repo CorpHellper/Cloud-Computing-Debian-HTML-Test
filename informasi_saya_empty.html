@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>Super Tester Website</title>
+    <link rel="shortcut icon" href="namefile.extension">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to bottom right, #626E63, #78B57C, #2F9637, #19899A);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-container {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-container:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .profile-info {
+            text-align: left;
+            margin: 30px 0;
+        }
+
+        .info-item {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid #ecf0f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-item:hover {
+            background-color: #f8f9fa;
+            margin: 0 -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #34495e;
+            width: 140px;
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            color: #2c3e50;
+            flex: 1;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        .divider {
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 600px) {
+            .profile-container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .profile-image {
+                width: 120px;
+                height: 120px;
+                font-size: 3rem;
+            }
+
+            .info-label {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="header">
+            <h1>Kucing Nusantara</h1>
+        </div>
+        <img src="kudings.jpeg" alt="Profile Picture">
+        <p><em><a href="/" target="_blank">Chirp Chirp Chirp Miaw Chirp :3</a></em></p>
+        <p><strong>1. Nama:</strong> </p>
+        <p><strong>2. Kelas:</strong> </p>
+        <p><strong>3. Jenis Kelamin:</strong> </p>
+        <p><strong>4. Alamat:</strong> </p>
+        <p>&#9733; free input here &#9733;</p>
+    </div>
+</body>
+</html>
